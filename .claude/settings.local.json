@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\user\\\\Desktop\\\\Code\\\\LandingSite\\\\Islom\")",
+      "Bash(npm create *)",
+      "Bash(npx vite *)"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D78A"/>
+      <stop offset="35%" stop-color="#C9A84C"/>
+      <stop offset="65%" stop-color="#9B7A1E"/>
+      <stop offset="100%" stop-color="#F0D070"/>
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D78A"/>
+      <stop offset="30%" stop-color="#C9A84C"/>
+      <stop offset="60%" stop-color="#7A5C10"/>
+      <stop offset="100%" stop-color="#F0D070"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="50" fill="#080808"/>
+  <circle cx="50" cy="50" r="47" fill="none" stroke="url(#goldRing)" stroke-width="2"/>
+  <polygon points="16,82 32,82 50,19 38,19" fill="url(#goldFill)"/>
+  <polygon points="50,19 62,19 84,82 68,82" fill="url(#goldFill)"/>
+  <polygon points="32,82 68,82 50,53" fill="#080808"/>
+</svg>
