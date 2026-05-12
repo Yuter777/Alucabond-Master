@@ -39,7 +39,7 @@
           v-for="item in navItems"
           :key="item.label"
           :href="item.href"
-          class="nav-link font-mono text-[9px] tracking-[0.3em] uppercase text-gold/35 hover:text-gold/75 transition-colors duration-300 relative py-1"
+          class="nav-link font-mono text-[10px] tracking-[0.3em] uppercase text-gold/85 hover:text-gold/95 transition-colors duration-300 relative py-1"
           @click.prevent="scrollTo(item.href)"
         >
           {{ item.label }}
@@ -50,10 +50,10 @@
       <!-- Right side -->
       <div class="hidden md:flex items-center gap-5">
         <a href="https://instagram.com/alucabond_construct" target="_blank"
-           class="font-mono text-[8px] text-gold/25 hover:text-gold/55 tracking-[0.3em] uppercase transition-colors duration-300">
+           class="font-mono text-[10px] text-gold/85 hover:text-gold/95 tracking-[0.3em] uppercase transition-colors duration-300">
           Instagram
         </a>
-        <button class="btn-primary text-[9px] py-2.5 px-5" @click="scrollTo('#contact')">
+        <button class="btn-primary text-[10px] py-2.5 px-5" @click="scrollTo('#contact')">
           Murojaat
         </button>
       </div>
@@ -83,7 +83,7 @@
           v-for="item in navItems"
           :key="item.label"
           :href="item.href"
-          class="font-mono text-xs tracking-[0.3em] uppercase text-gold/40 hover:text-gold/70 transition-colors duration-300 py-1"
+          class="font-mono text-xs tracking-[0.3em] uppercase text-gold/80 hover:text-gold/90 transition-colors duration-300 py-1"
           @click.prevent="scrollTo(item.href); mobileOpen = false"
         >
           {{ item.label }}

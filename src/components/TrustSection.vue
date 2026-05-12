@@ -61,28 +61,15 @@
                style="background: linear-gradient(135deg, rgba(201,168,76,0.03) 0%, transparent 100%)"></div>
 
           <div class="relative">
-            <div class="font-mono text-[9px] text-gold/18 tracking-[0.5em] uppercase mb-5">
+            <div class="font-mono text-[11px] text-gold/18 tracking-[0.5em] uppercase mb-5">
               {{ String(i + 1).padStart(2, '0') }}
             </div>
             <div class="font-body text-sm text-gold/55 mb-3 group-hover:text-gold/80 transition-colors duration-500 leading-snug">
               {{ feat.title }}
             </div>
-            <div class="font-body text-[10px] text-gold/22 leading-relaxed">
+            <div class="font-body text-[11px] text-gold/22 leading-relaxed">
               {{ feat.desc }}
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Brands/Partners strip -->
-      <div ref="partnersRef" class="mt-16 pt-10 border-t opacity-0" style="border-color: rgba(201,168,76,0.06)">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-          <span class="font-mono text-[8px] text-gold/18 tracking-[0.5em] uppercase">Material hamkorlar</span>
-          <div class="flex items-center gap-10 flex-wrap justify-center md:justify-end">
-            <span v-for="brand in brands" :key="brand"
-              class="font-display text-lg text-gold/12 tracking-[0.2em] uppercase hover:text-gold/30 transition-colors duration-300 cursor-default">
-              {{ brand }}
-            </span>
           </div>
         </div>
       </div>

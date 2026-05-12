@@ -29,72 +29,10 @@
       >
         <!-- AFTER (right side — new facade) -->
         <div class="absolute inset-0">
-          <svg class="w-full h-full" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="afterSky" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#0a0b0c"/>
-                <stop offset="100%" stop-color="#141618"/>
-              </linearGradient>
-              <linearGradient id="afterPanel" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#1a1c1e"/>
-                <stop offset="50%" stop-color="#22242a"/>
-                <stop offset="100%" stop-color="#151618"/>
-              </linearGradient>
-              <linearGradient id="afterPanelLight" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#252830"/>
-                <stop offset="30%" stop-color="#2e3240"/>
-                <stop offset="100%" stop-color="#1c1e24"/>
-              </linearGradient>
-              <linearGradient id="goldLine" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#C9A84C" stop-opacity="0"/>
-                <stop offset="30%" stop-color="#D4AF37"/>
-                <stop offset="70%" stop-color="#B8860B"/>
-                <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <rect width="1200" height="700" fill="url(#afterSky)"/>
-            <rect x="0" y="600" width="1200" height="100" fill="rgba(0,0,0,0.9)"/>
-            <rect x="150" y="50" width="900" height="570" fill="url(#afterPanel)"/>
-            <g opacity="0.6">
-              <rect x="150" y="50" width="3" height="570" fill="#0a0a0b"/>
-              <rect x="330" y="50" width="3" height="570" fill="#0a0a0b"/>
-              <rect x="510" y="50" width="3" height="570" fill="#0a0a0b"/>
-              <rect x="690" y="50" width="3" height="570" fill="#0a0a0b"/>
-              <rect x="870" y="50" width="3" height="570" fill="#0a0a0b"/>
-              <rect x="1047" y="50" width="3" height="570" fill="#0a0a0b"/>
-              <rect x="150" y="50" width="900" height="2" fill="#0a0a0b"/>
-              <rect x="150" y="120" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="190" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="260" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="330" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="400" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="470" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="540" width="900" height="2" fill="#090909"/>
-              <rect x="150" y="618" width="900" height="2" fill="#0a0a0b"/>
-            </g>
-            <rect x="330" y="52" width="177" height="66" fill="url(#afterPanelLight)" opacity="0.4"/>
-            <rect x="510" y="120" width="177" height="66" fill="url(#afterPanelLight)" opacity="0.25"/>
-            <rect x="690" y="52" width="177" height="66" fill="url(#afterPanelLight)" opacity="0.35"/>
-            <!-- Gold chrome columns -->
-            <rect x="147" y="40" width="6" height="585" fill="url(#goldLine)" opacity="0.6"/>
-            <rect x="327" y="40" width="5" height="585" fill="url(#goldLine)" opacity="0.35"/>
-            <rect x="507" y="40" width="5" height="585" fill="url(#goldLine)" opacity="0.3"/>
-            <rect x="687" y="40" width="5" height="585" fill="url(#goldLine)" opacity="0.45"/>
-            <rect x="867" y="40" width="5" height="585" fill="url(#goldLine)" opacity="0.35"/>
-            <rect x="1044" y="40" width="6" height="585" fill="url(#goldLine)" opacity="0.6"/>
-            <rect x="140" y="35" width="920" height="18" fill="#0f1012"/>
-            <rect x="140" y="33" width="920" height="4" fill="#1e1a0a"/>
-            <rect x="150" y="570" width="900" height="48" fill="#090909"/>
-            <g opacity="0.15">
-              <rect x="156" y="126" width="168" height="60" fill="#2a3040" rx="0"/>
-              <rect x="336" y="126" width="168" height="60" fill="#2a3040" rx="0"/>
-              <rect x="516" y="196" width="168" height="60" fill="#283040" rx="0"/>
-              <rect x="696" y="196" width="168" height="60" fill="#283040" rx="0"/>
-            </g>
-            <rect x="170" y="65" width="100" height="24" fill="rgba(0,0,0,0.6)" rx="0"/>
-            <text x="220" y="82" font-family="Space Mono" font-size="10" fill="rgba(201,168,76,0.7)" text-anchor="middle" letter-spacing="3">KEYIN</text>
-            <line x1="0" y1="620" x2="1200" y2="620" stroke="rgba(201,168,76,0.04)" stroke-width="1"/>
-          </svg>
+          <img src="@/assets/after.png" class="w-full h-full object-cover" alt="Keyin" draggable="false" />
+          <div class="absolute top-4 left-4 px-3 py-1" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(201,168,76,0.3)">
+            <span class="font-mono text-[10px] tracking-[0.3em] uppercase" style="color: rgba(201,168,76,0.8)">KEYIN</span>
+          </div>
         </div>
 
         <!-- BEFORE (left side — old building) -->
@@ -102,54 +40,10 @@
           class="absolute inset-0 overflow-hidden"
           :style="{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }"
         >
-          <svg class="w-full h-full" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="beforeSky" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#0d0c0b"/>
-                <stop offset="100%" stop-color="#181614"/>
-              </linearGradient>
-            </defs>
-            <rect width="1200" height="700" fill="url(#beforeSky)"/>
-            <rect x="0" y="600" width="1200" height="100" fill="rgba(0,0,0,0.8)"/>
-            <rect x="150" y="50" width="900" height="570" fill="#1c1a17"/>
-            <rect x="150" y="50" width="900" height="570" fill="none" stroke="#0f0e0c" stroke-width="1"/>
-            <g fill="#13120f" stroke="#0c0b09" stroke-width="1">
-              <rect x="200" y="100" width="100" height="70"/>
-              <rect x="340" y="100" width="100" height="70"/>
-              <rect x="480" y="100" width="100" height="70"/>
-              <rect x="620" y="100" width="100" height="70"/>
-              <rect x="760" y="100" width="100" height="70"/>
-              <rect x="900" y="100" width="100" height="70"/>
-              <rect x="200" y="210" width="100" height="70"/>
-              <rect x="340" y="210" width="100" height="70"/>
-              <rect x="480" y="210" width="100" height="70"/>
-              <rect x="620" y="210" width="100" height="70"/>
-              <rect x="760" y="210" width="100" height="70"/>
-              <rect x="900" y="210" width="100" height="70"/>
-              <rect x="200" y="320" width="100" height="70"/>
-              <rect x="340" y="320" width="100" height="70"/>
-              <rect x="480" y="320" width="100" height="70"/>
-              <rect x="620" y="320" width="100" height="70"/>
-              <rect x="760" y="320" width="100" height="70"/>
-              <rect x="900" y="320" width="100" height="70"/>
-              <rect x="200" y="430" width="100" height="70"/>
-              <rect x="340" y="430" width="100" height="70"/>
-              <rect x="480" y="430" width="100" height="70"/>
-              <rect x="620" y="430" width="100" height="70"/>
-              <rect x="760" y="430" width="100" height="70"/>
-              <rect x="900" y="430" width="100" height="70"/>
-            </g>
-            <g stroke="rgba(0,0,0,0.5)" stroke-width="0.5" opacity="0.4">
-              <line x1="250" y1="50" x2="255" y2="200"/>
-              <line x1="500" y1="100" x2="502" y2="300"/>
-              <line x1="700" y1="50" x2="698" y2="180"/>
-              <line x1="900" y1="150" x2="905" y2="400"/>
-            </g>
-            <rect x="150" y="50" width="900" height="570" fill="rgba(20,15,8,0.3)"/>
-            <rect x="170" y="65" width="100" height="24" fill="rgba(0,0,0,0.5)" rx="0"/>
-            <text x="220" y="82" font-family="Space Mono" font-size="10" fill="rgba(201,168,76,0.4)" text-anchor="middle" letter-spacing="3">OLDIN</text>
-            <line x1="0" y1="620" x2="1200" y2="620" stroke="rgba(201,168,76,0.04)" stroke-width="1"/>
-          </svg>
+          <img src="@/assets/before.png" class="w-full h-full object-cover" alt="Oldin" draggable="false" />
+          <div class="absolute top-4 left-4 px-3 py-1" style="background: rgba(0,0,0,0.5); border: 1px solid rgba(201,168,76,0.2)">
+            <span class="font-mono text-[10px] tracking-[0.3em] uppercase" style="color: rgba(201,168,76,0.5)">OLDIN</span>
+          </div>
         </div>
 
         <!-- Drag handle -->
@@ -191,9 +85,9 @@
           }"
           @click="activeCase = i"
         >
-          <div class="font-mono text-[8px] text-gold/22 tracking-[0.4em] uppercase mb-2">{{ String(i + 1).padStart(2, '0') }}</div>
-          <div class="font-body text-xs text-gold/48 group-hover:text-gold/68 transition-colors duration-400">{{ c.title }}</div>
-          <div class="font-mono text-[8px] text-gold/18 mt-1">{{ c.location }}</div>
+          <div class="font-mono text-[10px] text-gold/22 tracking-[0.4em] uppercase mb-2">{{ String(i + 1).padStart(2, '0') }}</div>
+          <div class="font-body text-[12px] text-gold/48 group-hover:text-gold/68 transition-colors duration-400">{{ c.title }}</div>
+          <div class="font-mono text-[10px] text-gold/18 mt-1">{{ c.location }}</div>
         </div>
       </div>
     </div>
@@ -219,8 +113,8 @@ let isDragging = false
 
 const cases = [
   { title: 'Turar-joy binosi fasad yengilanishi', location: 'Toshkent, 2024' },
-  { title: 'Ofis markazi ACP qoplama', location: 'Samarqand, 2023' },
-  { title: 'Savdo markazi tashqi bezak', location: "Farg'ona, 2024" },
+  { title: 'Ofis markazi ACP qoplama', location: 'Toshkent, 2023' },
+  { title: 'Savdo markazi tashqi bezak', location: "Toshkent, 2024" },
 ]
 
 function getSliderPos(clientX) {

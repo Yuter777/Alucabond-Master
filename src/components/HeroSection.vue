@@ -8,12 +8,12 @@
     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30 z-10 pointer-events-none"></div>
 
     <!-- Main content -->
-    <div class="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
+    <div class="relative inset-0 z-20 flex flex-col justify-center mt-24 px-8 md:px-16 lg:px-24 max-w-4xl">
 
       <!-- Service tag -->
       <div ref="tagRef" class="mb-8 opacity-0 flex items-center gap-4">
         <div class="w-10 h-px bg-gold/40"></div>
-        <span class="font-mono text-[9px] tracking-[0.5em] text-gold/45 uppercase">
+        <span class="font-mono text-[10px] tracking-[0.5em] text-gold/85 uppercase">
           Fasad O'rnatish Xizmatlari · Toshkent
         </span>
       </div>
@@ -21,7 +21,7 @@
       <!-- Main headline -->
       <div class="mb-3 overflow-hidden">
         <h1 ref="line1Ref" class="font-display text-[clamp(3.5rem,9vw,10rem)] leading-[0.92] text-gold uppercase tracking-tight opacity-0">
-          BINOLARNI
+          BINOLARDA
         </h1>
       </div>
       <div class="mb-3 overflow-hidden">
@@ -31,7 +31,7 @@
       </div>
       <div class="mb-8 overflow-hidden">
         <h3 ref="line3Ref" class="font-display text-[clamp(3.5rem,9vw,10rem)] leading-[0.92] text-gold/30 uppercase tracking-tight opacity-0">
-          FASADGA
+          FASAD
         </h3>
       </div>
 
